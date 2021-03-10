@@ -1,0 +1,142 @@
+:root {
+    --mainColor: #533738;
+    --btnColor: #CC8B86;
+    --pasteleBrown: #8D7370;
+    --bodyColor: #EFE6E4;
+    --hoverBrown: rgba(100, 72, 69, 0.8);
+    --beigePink: #E2C4BA;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.body {
+    background: var(--bodyColor);
+}
+
+a, h1, h2, p, span, div {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--mainColor);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main {
+    background-image: url("src/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 2em;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    font-size: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 .5em;
+}
+
+.main-text {
+    grid-column: 2/span 6;
+    margin: 30% 0 20%;
+}
+
+.main-text-h1 {
+    margin-bottom: .5em;
+}
+
+.main-text-p {
+    margin-bottom: 1.2em;
+}
+
+.application {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 1em 2em;
+    border: none;
+    background: var(--btnColor);
+}
+
+.section {
+    padding-top: 4em;
+}
+
+#about-us h2 {
+    text-align: center;
+}
+
+.about-us-container {
+    column-gap: 3em;
+    margin-top: 2em;
+}
+
+.about-us-container img {
+    grid-column: 2/7;
+}
+
+.about-us-container-text {
+    grid-column: 7/-2;
+}
+
+
+.awards {
+    padding: 3em 0;
+    background: var(--pasteleBrown);
+    margin-top: 1em;
+}
+
+.awards-inner {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.awards-item span, .awards-item h1{
+    text-align: center;
+    color: #fff;
+}
+
+.awards-item span {
+    font-size: 1.66em;
+    font-weight: 500;
+}
