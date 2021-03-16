@@ -25,7 +25,7 @@
                     <a href="#team">Команда</a>
                     <a href="#works">Как мы работаем</a>
                     <a href="#review">Отзывы клиентов</a>
-                    <a href="#appliccation">Оставить заявку</a>
+                    <a href="#application">Оставить заявку</a>
                 </nav>
                 <div class="contact">
                     <a href="tel:+79818574624">+7 (981) 857-46-24</a>
@@ -113,18 +113,18 @@
         <div class="container">
             <div class="team-container">
                 <div class="team-item">
-                    <img src="src/image 61.png"/>
+                    <img src="src/image 61.png" alt="Masha"/>
                     <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
                         и помогает сделать вашу квартиру красивой и уютной.</p>
                 </div>
                 <div class="team-item">
-                    <img src="src/image 59.png"/>
+                    <img src="src/image 59.png" alt="Sasha"/>
                     <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
                         документы
                         и ответит на все вопросы.</p>
                 </div>
                 <div class="team-item">
-                    <img src="src/image 58.png"/>
+                    <img src="src/image 58.png" alt="Katya"/>
                     <p>Катя тоже занимается дизайном.
                         Она всегда находит общий язык
                         с клиентами и точно знает,
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <h2>Как мы работаем</h2>
+        <h2 id="works">Как мы работаем</h2>
         <div class="container">
             <div class="work-container">
                 <div class="work-item">
@@ -162,7 +162,7 @@
             </div>
         </div>
     </section>
-    <section class="section review">
+    <section class="section review" id="review">
         <h2>Отзывы</h2>
         <div class="container review-container">
             <button class="review-arrow"><img src="src/icons/Arrow%202.svg" alt=""></button>
@@ -174,7 +174,7 @@
                             для украшения своего дома.
                         </p>
                         <p class="review-p">
-                            Работа шла быстро, было очень приятно общаться и взаимодествовайть
+                            Работа шла быстро, было очень приятно общаться и взаимодействовать
                             с сотрудниками. Не ожидала, что это будет так легко!
                         </p>
                         <p class="review-p">
@@ -191,7 +191,7 @@
             <button class="review-arrow"><img src="src/icons/Arrow%202.svg" alt=""></button>
         </div>
     </section>
-    <section class="section application-section">
+    <section class="section application-section" id="application">
         <div class="container">
             <div class="application-text">
                 <h2>Оставить заявку</h2>
@@ -199,9 +199,9 @@
                     в удобное вам время и ответит на все вопросы.</p>
                 <form action="" id="application-form">
                     <label for="name"></label>
-                    <input type="name" id="name" placeholder="Ваше имя">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
                     <label for="phone"></label>
-                    <input type="phone" id="phone" placeholder="Введите телефон">
+                    <input type="tel" id="phone" placeholder="Введите телефон" required>
                 </form>
                 <button class="application" type="submit" form="application-form">Оставить заявку</button>
             </div>

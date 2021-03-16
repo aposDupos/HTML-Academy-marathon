@@ -66,6 +66,7 @@ img {
 .main {
     background-image: url("src/main-background.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     padding-top: 2em;
@@ -91,6 +92,11 @@ nav {
 
 nav a {
     margin: 0 .5em;
+    transition: 1s all ease;
+    border-bottom: 1px solid transparent;
+}
+nav a:hover{
+    border-bottom: 1px solid var(--mainColor);
 }
 
 .main-text {
@@ -111,8 +117,19 @@ nav a {
     font-weight: 500;
     line-height: 24.38px;
     padding: 1.2em 3.2em;
-    border: none;
+    border: 0;
     background: var(--btnColor);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.application:focus {
+    outline: none;
+}
+
+.application:hover {
+    border-radius: 20px;
+    color: white;
 }
 
 .section {
@@ -220,6 +237,7 @@ nav a {
 .more img {
     width: 60px;
     margin-left: 10px;
+    transition: 1s ease-in-out;
 }
 
 .more {
@@ -236,6 +254,11 @@ nav a {
     align-items: center;
     border: none;
     background: none;
+    transition: .1s ease;
+}
+
+.more:hover img {
+    margin-left: 1.5em;
 }
 
 .team {
@@ -421,6 +444,14 @@ input::placeholder {
     font-size: 18px;
     line-height: 30px;
     color: #F6EDE9;
+}
+
+#application-form input {
+    transition: all 2s ease;
+}
+
+#application-form input:hover {
+    padding-left: 10px;
 }
 
 footer {
