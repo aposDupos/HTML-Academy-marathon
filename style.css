@@ -95,7 +95,8 @@ nav a {
     transition: 1s all ease;
     border-bottom: 1px solid transparent;
 }
-nav a:hover{
+
+nav a:hover {
     border-bottom: 1px solid var(--mainColor);
 }
 
